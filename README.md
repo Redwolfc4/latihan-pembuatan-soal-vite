@@ -1,69 +1,69 @@
-# React + TypeScript + Vite
+# latihan-pembuatan-soal-vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![TypeScript](https://img.shields.io/badge/Primary%20Language-TypeScript-blue)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+No description provided for this repository.
 
-## Expanding the ESLint configuration
+## Key Features and Highlights
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Utilizes TypeScript for development
+- Dependencies include chart.js, react, react-chartjs-2, react-dom, tailwindcss
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+To install the dependencies, run the following command:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Usage
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Here is an example of how to use this project:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
+```typescript
+import React from 'react';
+import { Bar } from 'react-chartjs-2';
+
+const data = {
+  labels: ['January', 'February', 'March', 'April', 'May'],
+  datasets: [
+    {
+      label: 'Sales',
+      data: [65, 59, 80, 81, 56],
+      backgroundColor: 'rgba(255, 99, 132, 0.2)',
+      borderColor: 'rgba(255, 99, 132, 1)',
+      borderWidth: 1,
     },
-  },
-])
+  ],
+};
+
+const MyBarChart = () => (
+  <div>
+    <h2>Sales Chart</h2>
+    <Bar data={data} />
+  </div>
+);
+
+export default MyBarChart;
 ```
+
+## Dependencies
+
+- [@tailwindcss/vite](https://www.npmjs.com/package/@tailwindcss/vite): ^4.1.13
+- [chart.js](https://www.npmjs.com/package/chart.js): ^4.5.0
+- [react](https://www.npmjs.com/package/react): ^19.1.1
+- [react-chartjs-2](https://www.npmjs.com/package/react-chartjs-2): ^5.3.0
+- [react-dom](https://www.npmjs.com/package/react-dom): ^19.1.1
+- [tailwindcss](https://www.npmjs.com/package/tailwindcss): ^4.1.13
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
