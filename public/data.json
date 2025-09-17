@@ -1,0 +1,202 @@
+[
+    {
+        "question": "Apa keuntungan utama menggunakan Collection dibandingkan Array di Java?",
+        "options": [
+            "Collection memiliki performa yang selalu lebih cepat.",
+            "Collection hanya bisa menyimpan tipe data primitif.",
+            "Ukuran Collection bersifat dinamis (bisa bertambah atau berkurang).",
+            "Array memiliki lebih banyak metode bawaan untuk manipulasi data."
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "Manakah di bawah ini yang merupakan karakteristik utama dari List?",
+        "options": [
+            "Elemen harus unik dan tidak terurut.",
+            "Elemen disimpan dalam format key-value.",
+            "Elemen terurut berdasarkan indeks dan boleh duplikat.",
+            "Elemen tidak boleh duplikat dan terurut secara alami."
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "Implementasi List manakah yang paling efisien untuk mengakses data secara acak menggunakan indeks (get(index))?",
+        "options": [
+            "ArrayList",
+            "LinkedList",
+            "Vector",
+            "HashSet"
+        ],
+        "correct": "A"
+    },
+    {
+        "question": "Jika kode namaSiswa.add(\"Budi\"); dijalankan dua kali pada ArrayList yang sama, apa yang akan terjadi?",
+        "options": [
+            "Hanya satu \"Budi\" yang akan tersimpan.",
+            "Akan terjadi error karena duplikasi data.",
+            "\"Budi\" yang kedua akan menimpa yang pertama.",
+            "ArrayList akan berisi dua elemen \"Budi\"."
+        ],
+        "correct": "D"
+    },
+    {
+        "question": "Apa ciri khas dari sebuah Set?",
+        "options": [
+            "Menyimpan data berdasarkan urutan penambahan.",
+            "Hanya menyimpan elemen yang unik (tidak ada duplikat).",
+            "Setiap elemen memiliki indeks numerik.",
+            "Menyimpan data dalam pasangan key-value."
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Apa yang dikembalikan oleh metode add() pada HashSet jika kita mencoba menambahkan elemen yang sudah ada di dalamnya?",
+        "options": [
+            "true",
+            "false",
+            "null",
+            "Exception"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Manakah implementasi Set yang menyimpan elemen secara terurut (natural order)?",
+        "options": [
+            "HashSet",
+            "LinkedHashSet",
+            "TreeSet",
+            "ArrayList"
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "Bagaimana cara Map menyimpan datanya?",
+        "options": [
+            "Sebagai daftar elemen yang terurut.",
+            "Sebagai kumpulan elemen unik.",
+            "Sebagai pasangan kunci-nilai (key-value pair).",
+            "Sebagai struktur data LIFO (Last-In, First-Out)."
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "Pada sebuah Map, manakah yang harus bersifat unik?",
+        "options": [
+            "Value (Nilai)",
+            "Key (Kunci)",
+            "Key dan Value harus unik sebagai pasangan.",
+            "Tidak ada yang harus unik."
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Apa yang terjadi jika kita menggunakan metode put() pada HashMap dengan key yang sudah ada?",
+        "options": [
+            "Operasi akan gagal dan mengembalikan false.",
+            "Value yang lama akan ditimpa dengan value yang baru.",
+            "Akan ada dua key yang sama dengan value yang berbeda.",
+            "Akan terjadi DuplicateKeyException."
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Metode apa yang digunakan untuk mengambil value dari Map jika kita mengetahui key-nya?",
+        "options": [
+            "fetch(key)",
+            "find(key)",
+            "get(key)",
+            "retrieve(key)"
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "Manakah dari berikut ini yang BUKAN merupakan implementasi dari interface Map?",
+        "options": [
+            "HashMap",
+            "TreeMap",
+            "Vector",
+            "LinkedHashMap"
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "Collections.sort() dapat digunakan untuk mengurutkan objek dari kelas...",
+        "options": [
+            "Map",
+            "Set",
+            "List",
+            "Semua jenis Collection"
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "Apa syarat utama yang harus dipenuhi sebelum menggunakan Collections.binarySearch() pada sebuah List?",
+        "options": [
+            "List tidak boleh mengandung elemen duplikat.",
+            "List harus berupa LinkedList.",
+            "List harus sudah dalam keadaan terurut.",
+            "List tidak boleh kosong."
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "Jika Collections.binarySearch() berhasil menemukan elemen yang dicari, apa nilai yang dikembalikannya?",
+        "options": [
+            "true",
+            "0",
+            "Indeks dari elemen tersebut.",
+            "Objek elemen yang ditemukan."
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "Dari contoh kode ManajemenToko, mengapa usernames.add(\"user1\") yang kedua kali tidak mengubah isi dari Set?",
+        "options": [
+            "Karena Set sudah penuh.",
+            "Karena \"user1\" sudah ada, dan Set tidak memperbolehkan duplikat.",
+            "Karena metode add() gagal secara acak.",
+            "Karena tipe datanya String."
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Diberikan List berisi [10, 50, 5, 25]. Setelah Collections.sort() dijalankan, bagaimana urutan List tersebut?",
+        "options": [
+            "[10, 50, 5, 25] (tidak berubah)",
+            "[50, 25, 10, 5]",
+            "[5, 10, 25, 50]",
+            "Terjadi error."
+        ],
+        "correct": "C"
+    },
+    {
+        "question": "Kapan sebaiknya kita memilih LinkedList daripada ArrayList?",
+        "options": [
+            "Saat membutuhkan akses data acak yang sangat cepat.",
+            "Saat sering melakukan operasi penambahan atau penghapusan data di tengah koleksi.",
+            "Saat ingin data tersimpan secara terurut otomatis.",
+            "Saat ingin memastikan tidak ada data duplikat."
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Dari contoh DataMahasiswa, apa value yang berpasangan dengan key 102?",
+        "options": [
+            "Andi",
+            "Beni",
+            "Cindy",
+            "Andi Saputra"
+        ],
+        "correct": "B"
+    },
+    {
+        "question": "Manakah pernyataan yang paling tepat mengenai Collection Framework?",
+        "options": [
+            "Sebuah kelas tunggal untuk menyimpan semua jenis data.",
+            "Hanya berisi algoritma untuk pengurutan data.",
+            "Sebuah arsitektur yang menyediakan interface, implementasi, dan algoritma untuk mengelola grup objek.",
+            "Sebuah pengganti permanen untuk tipe data Array."
+        ],
+        "correct": "C"
+    }
+]
